@@ -1,0 +1,394 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #fff;
+}
+h1{
+    font-size: 50px;
+    font-style: italic;
+    padding: 0, auto;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 30px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0f14;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* adds spacing between menu items */
+}
+
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 5px; /* smoother hover look */
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  background: #00c853;
+  color: #000;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* DROPDOWN */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  min-width: 180px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* CASCADING RIGHT MENU */
+.dropdown-right {
+  position: relative;
+}
+
+.submenu-right {
+  display: none;
+  position: absolute;
+  list-style: none;
+  left: 100%;
+  top: 0;
+  background: #111;
+  min-width: 150px;
+}
+
+.dropdown-right:hover .submenu-right {
+  display: block;
+}
+
+/* HERO */
+.ranking {
+  height: 90vh;
+  background: url("BG\ badminton.jpg") center/cover no-repeat;
+}
+
+
+/* FOOTER */
+footer {
+  background: #0a0f14;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+.footer-container img {
+  height: 90px;
+}
+footer p {
+  font-size: 20px; 
+  line-height: 1.5; 
+  color: #ccc; 
+}
+
+/* MOBILE */
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #0a0f14;
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Make dropdowns stack */
+  .submenu,
+  .submenu-right {
+    position: static;
+  }
+
+  .dropdown:hover .submenu,
+  .dropdown-right:hover .submenu-right {
+    display: block;
+  }
+}
+
+/*WOMENS RANKING*/
+/* TABLE */
+.ranking {
+  padding: 50px 20px;
+  text-align: center;
+}
+/* TREND COLORS */
+.up {
+  color: #00e676;
+  font-weight: bold;
+}
+
+.down {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.same {
+  color: #aaa;
+}
+
+/* TABLE IMPROVEMENT */
+.ranking-table td {
+  text-align: center;
+}
+
+.ranking-table td:nth-child(2) {
+  text-align: left;
+}
+
+.ranking-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.ranking-table th {
+  background: #111;
+}
+
+/* LINKS */
+.ranking-table a {
+  color: #00e676;
+  text-decoration: none;
+}
+
+.ranking-table a:hover {
+  text-decoration: underline;
+}
+
+/* TOP 3 HIGHLIGHT */
+.gold { background: linear-gradient(90deg, #ffd70033, transparent); }
+.silver { background: linear-gradient(90deg, #c0c0c033, transparent); }
+.bronze { background: linear-gradient(90deg, #cd7f3233, transparent); }
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SHOW MODAL */
+/* MODAL BASE */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8); /* dark page overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Show modal */
+.modal:target {
+  display: flex;
+}
+
+/* MODAL CONTENT */
+.modal-content {
+  position: relative;
+  color: #fff;
+  padding: 100px 50px 50px;  /* more padding for content */
+  border-radius: 30px;
+  max-width: 900px;           /* wider modal */
+  width: 90%;                 /* responsive width */
+  height: auto;
+  text-align: center;
+  overflow-y: auto;           /* scroll if content too tall */
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideFadeIn 0.5s forwards;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  background-size: cover;     /* allow background image */
+  background-position: center;
+}
+
+/* BACKGROUND IMAGE */
+.modal-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* DARK OVERLAY */
+.modal-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+/* CONTENT ABOVE */
+.modal-content * {
+  position: relative;
+  z-index: 1;
+}
+
+/* PLAYER PHOTO */
+.player-photo {
+    display: flex;
+     justify-content: center;
+     gap: 2px;
+     margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+  margin: -90px auto 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #00c853;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  animation: photoFade 0.6s ease forwards;
+}
+
+.player-photo img {
+width: 48%; /* each takes almost half the width */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.modal-content p {
+  font-size: 25px;            /* slightly larger text */
+  margin: 8px 0;
+  line-height: 1.6;
+}
+@media (max-height: 900px) {
+  .modal-content {
+    max-height: 100vh;
+  }
+}
+/* CLOSE BUTTON */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ff5252;
+}
+.modal-content h2 {
+  font-size: 32px;
+  margin-top: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideFadeIn {
+  from {opacity: 0; transform: translateY(-50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes photoFade {
+  from {opacity: 0; transform: scale(0.5);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* UNIQUE BACKGROUNDS PER PLAYER */
+.m1-bg::before { background: url("photos/Women\ Doubles/LiuTanLandscape.jpg") center/cover no-repeat; }
+.m2-bg::before { background: url("photos/Women\ Doubles/TanThinnahLandscape.jpg") center/cover no-repeat; }
+.m3-bg::before { background: url("photos/Women\ Doubles/LeeBaekLandscape.jpg") center/cover no-repeat; }
+.m4-bg::before { background: url("photos/Women\ Doubles/JiaZhangLandscape.jpg") center/cover no-repeat; }
+.m5-bg::before { background: url("photos/Women\ Doubles/KimKongLandscape.jpg") center/cover no-repeat; }
+.m6-bg::before { background: url("photos/Women\ Doubles/YukiMayuLandscape.jpg") center/cover no-repeat; }
+.m7-bg::before { background: url("photos/Women\ Doubles/RinKieLandscape.jpg") center/cover no-repeat; }
+.m8-bg::before { background: url("photos/Women\ Doubles/PeiHungLandscape.jpg") center/cover no-repeat; }
+.m9-bg::before { background: url("photos/Women\ Doubles/LiLouLandscape.jpg") center/cover no-repeat; }
+.m10-bg::before { background: url("photos/Women\ Doubles/GabStefLandscape.jpg") center/cover no-repeat; }

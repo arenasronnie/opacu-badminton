@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPACU Badminton</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="opacu-.png" alt="OPACU Logo">
+      </a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Ranking ▾</a>
+        <ul class="submenu">
+
+          <li class="dropdown-right">
+            <a href="#">Singles ▸</a>
+            <ul class="submenu-right">
+              <li><a href="mensingles.html">Men's</a></li>
+              <li><a href="womensingles.html">Women's</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-right">
+            <a href="#">Doubles ▸</a>
+            <ul class="submenu-right">
+              <li><a href="mensdoubles.html">Men's Doubles</a></li>
+              <li><a href="womensdoubles.html">Women's Doubles</a></li>
+            </ul>
+          </li>
+
+          <li><a href="mixeddoubles.html">Mixed Doubles</a></li>
+
+        </ul>
+      </li>
+
+      <li><a href="guide.html">Guides</a></li>
+      <li><a href="aboutus.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="ranking">
+  <h1>Men's Doubles Ranking</h1>
+
+  <table class="ranking-table">
+    <tr>
+      <th>#</th>
+      <th>Players</th>
+      <th>Country</th>
+      <th>Wins</th>
+      <th>Points</th>
+      <th>Trend</th>
+    </tr>
+
+    <tr class="gold">
+      <td>1</td>
+      <td><a href="#m1">KIM Won Ho / SEO Seung Jae</a></td>
+      <td>🇰🇷</td>
+      <td>40</td>
+      <td>95,000</td>
+      <td class="up">▲ +1</td>
+    </tr>
+
+    <tr class="silver">
+      <td>2</td>
+      <td><a href="#m2">Aaron CHIA / SOH Wooi Yik</a></td>
+      <td>🇲🇾</td>
+      <td>38</td>
+      <td>92,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+
+    <tr class="bronze">
+      <td>3</td>
+      <td><a href="#m3">LIANG Wei Keng / WANG Chang</a></td>
+      <td>🇨🇳</td>
+      <td>36</td>
+      <td>89,000</td>
+      <td class="same">● 0</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td><a href="#m4">Satwiksairaj RANKIREDDY / Chirag SHETTY</a></td>
+      <td>🇮🇳</td>
+      <td>35</td>
+      <td>86,500</td>
+      <td class="up">▲ +2</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td><a href="#m5">Fajar ALFIAN / Muhammad Shohibul FIKRI</a></td>
+      <td>🇮🇩</td>
+      <td>33</td>
+      <td>84,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td><a href="#m6">MAN Wei Chong / Kai Wun TEE</a></td>
+      <td>🇲🇾</td>
+      <td>31</td>
+      <td>81,000</td>
+      <td class="up">▲ +1</td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td><a href="#m7">GOH Sze Fei / Nur IZZUDDIN</a></td>
+      <td>🇲🇾</td>
+      <td>29</td>
+      <td>78,500</td>
+      <td class="same">● 0</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td><a href="#m8">Takuro HOKI / Yugo KOBAYASHI</a></td>
+      <td>🇯🇵</td>
+      <td>28</td>
+      <td>76,000</td>
+      <td class="down">▼ -2</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td><a href="#m9">Sabar Karyaman GUTAMA / Moh Reza Pahlevi ISFAHANI</a></td>
+      <td>🇮🇩 / 🇮🇷</td>
+      <td>26</td>
+      <td>73,500</td>
+      <td class="up">▲ +3</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td><a href="#m10">CHEN Bo Yang / LIU Yi</a></td>
+      <td>🇨🇳</td>
+      <td>24</td>
+      <td>71,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+  </table>
+</section>
+
+<!-- PLAYER MODALS - MEN'S DOUBLES -->
+
+<div id="m1" class="modal">
+  <div class="modal-content m1-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/KimWonhoPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/SeoSeungJaePortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>KIM Won Ho / SEO Seung Jae</h2>
+    <p>Country: South Korea</p>
+    <p>World Ranking: 1</p>
+    <p>Points: 95,000</p>
+    <p>Wins: 40</p>
+    <p>Recent Form: W-W-L-W-W</p>
+    <p>Rank Movement: ↑1</p>
+    <p>Dynamic doubles pair with strong coordination, fast smashes, and exceptional net play. Known for strong defensive coverage and quick transitions.</p>
+  </div>
+</div>
+
+<div id="m2" class="modal">
+  <div class="modal-content m2-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/AaronChiaPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/SohWooiPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>Aaron CHIA / SOH Wooi Yik</h2>
+    <p>Country: Malaysia</p>
+    <p>World Ranking: 2</p>
+    <p>Points: 92,000</p>
+    <p>Wins: 38</p>
+    <p>Recent Form: W-L-W-W-L</p>
+    <p>Rank Movement: ↓1</p>
+    <p>Highly experienced pair with quick reflexes, strong mid-court coverage, and precise smashes. Known for tactical shot placement under pressure.</p>
+  </div>
+</div>
+
+<div id="m3" class="modal">
+  <div class="modal-content m3-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/LiangWeiKengPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/WangChangPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>LIANG Wei Keng / WANG Chang</h2>
+    <p>Country: China</p>
+    <p>World Ranking: 3</p>
+    <p>Points: 89,000</p>
+    <p>Wins: 36</p>
+    <p>Recent Form: W-W-W-L-W</p>
+    <p>Rank Movement: →0</p>
+    <p>Powerful attacking duo with excellent teamwork and fast smashes. Known for aggressive play and strong court coverage.</p>
+  </div>
+</div>
+
+<div id="m4" class="modal">
+  <div class="modal-content m4-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/SatwiksairajPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/ChiragPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>Satwiksairaj RANKIREDDY / Chirag SHETTY</h2>
+    <p>Country: India</p>
+    <p>World Ranking: 4</p>
+    <p>Points: 86,500</p>
+    <p>Wins: 35</p>
+    <p>Recent Form: W-L-W-W-W</p>
+    <p>Rank Movement: ↑2</p>
+    <p>Highly skilled Indian pair with fast smashes and clever net strategies. Known for explosive rallies and strong defensive coverage.</p>
+  </div>
+</div>
+
+<div id="m5" class="modal">
+  <div class="modal-content m5-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/FajarPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/MuhammadPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>Fajar ALFIAN / Muhammad Shohibul FIKRI</h2>
+    <p>Country: Indonesia</p>
+    <p>World Ranking: 5</p>
+    <p>Points: 84,000</p>
+    <p>Wins: 33</p>
+    <p>Recent Form: W-L-L-W-W</p>
+    <p>Rank Movement: ↓1</p>
+    <p>Indonesian pair with rapid attacking style, strong smashes, and excellent coordination at the net.</p>
+  </div>
+</div>
+
+<div id="m6" class="modal">
+  <div class="modal-content m6-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/ManWeiPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/KaiWunPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>MAN Wei Chong / Kai Wun TEE</h2>
+    <p>Country: Malaysia</p>
+    <p>World Ranking: 6</p>
+    <p>Points: 81,000</p>
+    <p>Wins: 31</p>
+    <p>Recent Form: W-W-L-L-W</p>
+    <p>Rank Movement: ↑1</p>
+    <p>Strong Malaysian pair with fast attacks, solid defense, and impressive coordination in mid-court plays.</p>
+  </div>
+</div>
+
+<div id="m7" class="modal">
+  <div class="modal-content m7-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/GohSzePortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/NurPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>GOH Sze Fei / Nur IZZUDDIN</h2>
+    <p>Country: Malaysia</p>
+    <p>World Ranking: 7</p>
+    <p>Points: 78,500</p>
+    <p>Wins: 29</p>
+    <p>Recent Form: W-W-L-W-L</p>
+    <p>Rank Movement: →0</p>
+    <p>Reliable Malaysian pair known for strong net play, sharp smashes, and consistency in long rallies.</p>
+  </div>
+</div>
+
+<div id="m8" class="modal">
+  <div class="modal-content m8-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/TakuroPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/YugoPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>Takuro HOKI / Yugo KOBAYASHI</h2>
+    <p>Country: Japan</p>
+    <p>World Ranking: 8</p>
+    <p>Points: 76,000</p>
+    <p>Wins: 28</p>
+    <p>Recent Form: L-W-W-L-W</p>
+    <p>Rank Movement: ↓2</p>
+    <p>Experienced Japanese pair with fast reflexes, strategic plays, and precise smashes from mid to back court.</p>
+  </div>
+</div>
+
+<div id="m9" class="modal">
+  <div class="modal-content m9-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/SabarPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/MohPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>Sabar Karyaman GUTAMA / Moh Reza Pahlevi ISFAHANI</h2>
+    <p>Country: Indonesia / Iran</p>
+    <p>World Ranking: 9</p>
+    <p>Points: 73,500</p>
+    <p>Wins: 26</p>
+    <p>Recent Form: W-L-W-W-L</p>
+    <p>Rank Movement: ↑3</p>
+    <p>Aggressive international pair with strong attacking style and fast-paced net exchanges. Known for unpredictable tactics.</p>
+  </div>
+</div>
+
+<div id="m10" class="modal">
+  <div class="modal-content m10-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Men Doubles/ChenBoPortrait.jpg" alt="KIM Won Ho"> 
+      <img src="photos/Men Doubles/LiuYiPortrait.jpg" alt="SEO Seung Jae">
+    </div>
+    <h2>CHEN Bo Yang / LIU Yi</h2>
+    <p>Country: China</p>
+    <p>World Ranking: 10</p>
+    <p>Points: 71,000</p>
+    <p>Wins: 24</p>
+    <p>Recent Form: L-W-W-L-W</p>
+    <p>Rank Movement: ↓1</p>
+    <p>Experienced Chinese duo with strong smashes and solid defensive coverage. Known for tactical doubles coordination.</p>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div>
+      <img src="photos/opacu-.png" alt="OPACU Logo">
+      <h3>OPACU</h3>
+      <p>Elevating badminton performance worldwide.</p>
+    </div>
+
+     <div>
+      <h4>Contents</h4>
+      <p>Home</p>
+      <p>Rankings</p>
+      <p>Guides</p>
+      <p>About</p>
+    </div>
+
+    <div>
+      <h4>Rankings</h4>
+      <p>Male</p>
+      <p>Female</p>
+      <p>Doubles</p>
+      <p>Mixed Doubles</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email: support@opacu.com</p>
+      <p>Phone: +63 900 123 4567</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

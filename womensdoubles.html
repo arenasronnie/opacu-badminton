@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPACU Badminton</title>
+  <link rel="stylesheet" href="styles2-1.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="opacu-.png" alt="OPACU Logo">
+      </a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Ranking ▾</a>
+        <ul class="submenu">
+
+          <li class="dropdown-right">
+            <a href="#">Singles ▸</a>
+            <ul class="submenu-right">
+              <li><a href="mensingles.html">Men's</a></li>
+              <li><a href="womensingles.html">Women's</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-right">
+            <a href="#">Doubles ▸</a>
+            <ul class="submenu-right">
+              <li><a href="mensdoubles.html">Men's Doubles</a></li>
+              <li><a href="womensdoubles.html">Women's Doubles</a></li>
+            </ul>
+          </li>
+
+          <li><a href="mixeddoubles.html">Mixed Doubles</a></li>
+
+        </ul>
+      </li>
+
+      <li><a href="guide.html">Guides</a></li>
+      <li><a href="aboutus.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="ranking">
+  <h1>Women's Doubles Ranking</h1>
+
+  <table class="ranking-table">
+    <tr>
+      <th>#</th>
+      <th>Players</th>
+      <th>Country</th>
+      <th>Wins</th>
+      <th>Points</th>
+      <th>Trend</th>
+    </tr>
+
+    <tr class="gold">
+      <td>1</td>
+      <td><a href="#m1">LIU Sheng Shu / TAN Ning</a></td>
+      <td>🇨🇳</td>
+      <td>40</td>
+      <td>95,000</td>
+      <td class="up">▲ +1</td>
+    </tr>
+
+    <tr class="silver">
+      <td>2</td>
+      <td><a href="#m2">TAN Pearly / THINAAH Muralitharan</a></td>
+      <td>🇲🇾</td>
+      <td>38</td>
+      <td>92,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+
+    <tr class="bronze">
+      <td>3</td>
+      <td><a href="#m3">BAEK Ha Na / LEE So Hee</a></td>
+      <td>🇰🇷</td>
+      <td>36</td>
+      <td>89,000</td>
+      <td class="same">● 0</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td><a href="#m4">JIA Yi Fan / ZHANG Shu Xian</a></td>
+      <td>🇨🇳</td>
+      <td>35</td>
+      <td>86,500</td>
+      <td class="up">▲ +2</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td><a href="#m5">KIM Hye Jeong / KONG Hee Yong</a></td>
+      <td>🇰🇷</td>
+      <td>33</td>
+      <td>84,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td><a href="#m6">Yuki FUKUSHIMA / Mayu MATSUMOTO</a></td>
+      <td>🇯🇵</td>
+      <td>31</td>
+      <td>81,000</td>
+      <td class="up">▲ +1</td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td><a href="#m7">Rin IWANAGA / Kie NAKANISHI</a></td>
+      <td>🇯🇵</td>
+      <td>29</td>
+      <td>78,500</td>
+      <td class="same">● 0</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td><a href="#m8">HSIEH Pei Shan / HUNG En-Tzu</a></td>
+      <td>🇹🇼</td>
+      <td>28</td>
+      <td>76,000</td>
+      <td class="down">▼ -2</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td><a href="#m9">LI Yi Jing / LUO Xu Min</a></td>
+      <td>🇨🇳</td>
+      <td>26</td>
+      <td>73,500</td>
+      <td class="up">▲ +3</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td><a href="#m10">Gabriela STOEVA / Stefani STOEVA</a></td>
+      <td>🇧🇬</td>
+      <td>24</td>
+      <td>71,000</td>
+      <td class="down">▼ -1</td>
+    </tr>
+  </table>
+</section>
+
+<!-- PLAYER MODALS - MEN'S DOUBLES -->
+
+<!-- m1 -->
+<div id="m1" class="modal">
+  <div class="modal-content m1-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/LiuPortrait.jpg" alt="Liu Sheng Shu"> 
+      <img src="photos/Women Doubles/TanNingPortrait.jpg" alt="Tan Ning">
+    </div>
+    <h2>LIU Sheng Shu / TAN Ning</h2>
+    <p>Country: China</p>
+    <p>World Ranking: 1</p>
+    <p>Points: 95,000</p>
+    <p>Wins: 40</p>
+    <p>Recent Form: W-W-L-W-W</p>
+    <p>Rank Movement: ↑1</p>
+    <p>China’s top-ranked women’s doubles pair, combining speed, precision, and strong attacking control. They excel in fast rallies and dominate through sharp net play and coordinated court coverage.</p>
+  </div>
+</div>
+
+<!-- m2 -->
+<div id="m2" class="modal">
+  <div class="modal-content m2-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/PearlyPortrait.jpg" alt="Tan Pearly"> 
+      <img src="photos/Women Doubles/ThinnahPortrait.jpg" alt="Thinaah Muralitharan">
+    </div>
+    <h2>TAN Pearly / THINAAH Muralitharan</h2>
+    <p>Country: Malaysia</p>
+    <p>World Ranking: 2</p>
+    <p>Points: 92,000</p>
+    <p>Wins: 38</p>
+    <p>Recent Form: W-L-W-W-L</p>
+    <p>Rank Movement: ↓1</p>
+    <p>A resilient Malaysian duo known for their defensive strength and counterattacking ability. Their chemistry allows them to recover quickly and turn defense into offense effectively.</p>
+  </div>
+</div>
+
+<!-- m3 -->
+<div id="m3" class="modal">
+  <div class="modal-content m3-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/BaekPortrait.jpg" alt="Baek Ha Na"> 
+      <img src="photos/Women Doubles/LeePortrait.jpg" alt="Lee So Hee">
+    </div>
+    <h2>BAEK Ha Na / LEE So Hee</h2>
+    <p>Country: South Korea</p>
+    <p>World Ranking: 3</p>
+    <p>Points: 89,000</p>
+    <p>Wins: 36</p>
+    <p>Recent Form: W-W-W-L-W</p>
+    <p>Rank Movement: →0</p>
+    <p>A technically sharp Korean pair with excellent positioning and fast flat exchanges. They rely on consistency and smart shot placement to outplay opponents.</p>
+  </div>
+</div>
+
+<!-- m4 -->
+<div id="m4" class="modal">
+  <div class="modal-content m4-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/JiaPortrait.jpg" alt="Jia Yi Fan"> 
+      <img src="photos/Women Doubles/ZhangPortrait.jpg" alt="Zhang Shu Xian">
+    </div>
+    <h2>JIA Yi Fan / ZHANG Shu Xian</h2>
+    <p>Country: China</p>
+    <p>World Ranking: 4</p>
+    <p>Points: 86,500</p>
+    <p>Wins: 35</p>
+    <p>Recent Form: W-L-W-W-W</p>
+    <p>Rank Movement: ↑2</p>
+    <p>A powerful Chinese partnership combining experience and aggressive play. They are known for their strong smashes and ability to control rallies from the front court.</p>
+  </div>
+</div>
+
+<!-- m5 -->
+<div id="m5" class="modal">
+  <div class="modal-content m5-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/KimPortrait.jpg" alt="KIM Hye Jeong"> 
+      <img src="photos/Women Doubles/KongPortrait.jpg" alt="Kong Hee yong">
+    </div>
+    <h2>KIM Hye Jeong / KONG Hee Yong</h2>
+    <p>Country: South Korea</p>
+    <p>World Ranking: 5</p>
+    <p>Points: 84,000</p>
+    <p>Wins: 33</p>
+    <p>Recent Form: W-L-L-W-W</p>
+    <p>Rank Movement: ↓1</p>
+    <p>A balanced Korean team with strong defensive structure and tactical awareness. Their patience and rally control make them difficult to break down.</p>
+  </div>
+</div>
+
+<!-- m6 -->
+<div id="m6" class="modal">
+  <div class="modal-content m6-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/YukiPortrait.jpg" alt="Yuki Fukushima"> 
+      <img src="photos/Women Doubles/MayuPortrait.jpg" alt="Mayu Matsumoto">
+    </div>
+    <h2>Yuki FUKUSHIMA / Mayu MATSUMOTO</h2>
+    <p>Country: Japan</p>
+    <p>World Ranking: 6</p>
+    <p>Points: 81,000</p>
+    <p>Wins: 31</p>
+    <p>Recent Form: W-W-L-L-W</p>
+    <p>Rank Movement: ↑1</p>
+    <p>An experienced Japanese pair known for speed, endurance, and defensive excellence. They thrive in long rallies and force opponents into errors.</p>
+  </div>
+</div>
+
+<!-- m7 -->
+<div id="m7" class="modal">
+  <div class="modal-content m7-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/RinPortrait.jpg" alt="Rin Iwanaga"> 
+      <img src="photos/Women Doubles/KiePortrait.jpg" alt="Kie Nakanishi">
+    </div>
+    <h2>Rin IWANAGA / Kie NAKANISHI</h2>
+    <p>Country: Japan</p>
+    <p>World Ranking: 7</p>
+    <p>Points: 78,500</p>
+    <p>Wins: 29</p>
+    <p>Recent Form: W-W-L-W-L</p>
+    <p>Rank Movement: →0</p>
+    <p>A promising Japanese duo with quick reflexes and disciplined positioning. Their defensive reliability keeps them competitive in tight matches.</p>
+  </div>
+</div>
+
+<!-- m8 -->
+<div id="m8" class="modal">
+  <div class="modal-content m8-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/PeiPortrait.jpg" alt="Hsieh Pei Shan"> 
+      <img src="photos/Women Doubles/HungPortrait.jpg" alt="Hung En-Tzu">
+    </div>
+    <h2>HSIEH Pei Shan / HUNG En-Tzu</h2>
+    <p>Country: Chinese Taipei</p>
+    <p>World Ranking: 8</p>
+    <p>Points: 76,000</p>
+    <p>Wins: 28</p>
+    <p>Recent Form: L-W-W-L-W</p>
+    <p>Rank Movement: ↓2</p>
+    <p>A tactical pair known for smart shot variation and quick net exchanges. They rely on coordination and precision to disrupt opponents.</p>
+  </div>
+</div>
+
+<!-- m9 -->
+<div id="m9" class="modal">
+  <div class="modal-content m9-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/LiPortrait.jpg" alt="Li Yi Jing"> 
+      <img src="photos/Women Doubles/LuoPortrait.jpg" alt="Luo Xu Min">
+    </div>
+    <h2>LI Yi Jing / LUO Xu Min</h2>
+    <p>Country: China</p>
+    <p>World Ranking: 9</p>
+    <p>Points: 73,500</p>
+    <p>Wins: 26</p>
+    <p>Recent Form: W-L-W-W-L</p>
+    <p>Rank Movement: ↑3</p>
+    <p>An emerging Chinese pair with aggressive intent and fast attacking play. Their rapid rise highlights their growing confidence and skill.</p>
+  </div>
+</div>
+
+<!-- m10 -->
+<div id="m10" class="modal">
+  <div class="modal-content m10-bg">
+    <a href="#" class="close">✖</a>
+    <div class="player-photo">
+      <img src="photos/Women Doubles/GabrielaPortrait.jpg" alt="Gabriela Stoeva"> 
+      <img src="photos/Women Doubles/StefaniPortrait.jpg" alt="Stefani Stoeva">
+    </div>
+    <h2>Gabriela STOEVA / Stefani STOEVA</h2>
+    <p>Country: Bulgaria</p>
+    <p>World Ranking: 10</p>
+    <p>Points: 71,000</p>
+    <p>Wins: 24</p>
+    <p>Recent Form: L-W-W-L-W</p>
+    <p>Rank Movement: ↓1</p>
+    <p>A highly experienced Bulgarian sister duo with strong chemistry and tactical awareness. Their composure and teamwork allow them to compete consistently at the top level.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div>
+      <img src="photos/opacu-.png" alt="OPACU Logo">
+      <h3>OPACU</h3>
+      <p>Elevating badminton performance worldwide.</p>
+    </div>
+
+    <div>
+      <h4>Contents</h4>
+      <p>Home</p>
+      <p>Rankings</p>
+      <p>Guides</p>
+      <p>About</p>
+    </div>
+
+    <div>
+      <h4>Rankings</h4>
+      <p>Male</p>
+      <p>Female</p>
+      <p>Doubles</p>
+      <p>Mixed Doubles</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email: support@opacu.com</p>
+      <p>Phone: +63 900 123 4567</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
